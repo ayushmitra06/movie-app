@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movie</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        .btn-primary {
+            background-color: #ffcc00;
+            border: none;
+            color: #000;
+        }
+        .btn-primary:hover {
+            background-color: #ffdd33;
+        }
+        .link-btn {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .link-btn a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link-btn a:hover {
+            color: #ffdd33;
+        }
+        h1 {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Add Movie</h1>
+        <form id="movieform">
+            <div class="form-group">
+                <label for="name" class="form-label">Movie Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="releaseDate" class="form-label">Release Date:</label>
+                <input type="date" class="form-control" id="releaseDate" name="releaseDate" required>
+            </div>
+            <div class="form-group">
+                <label for="posterURL" class="form-label">Poster URL:</label>
+                <input type="url" class="form-control" id="posterURL" name="posterURL" required>
+            </div>
+            <div class="form-group">
+                <label for="imdbRating" class="form-label">IMDb Rating:</label>
+                <input type="number" class="form-control" id="imdbRating" name="imdbRating" step="0.1" min="0" max="10" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Add Movie</button>
+        </form>
+        <div class="link-btn">
+            <a href="displayMovies.html">View Movies</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
